@@ -8,7 +8,7 @@
     h1
     {
         text-shadow: 2px 2px 5px darkblue;
-        text-align: center;
+        text-align: left;
         color: darkgrey;
     }
 h1:hover{
@@ -17,27 +17,66 @@ h1:hover{
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
     background-color:#EEA47FFF;
-    align-content:center;
+    align-content:left;
     transition-duration: 2s;
-    text-align:center;
+    text-align:left;
     text-decoration: underline;
     text-decoration-color:purple;
     
     
      }
      
-img:hover{
+img{
 border-radius: 50%;
+width: 150px;
+height:150px;
+border-color: green;
+border-style: solid;
+margin-left: auto;
+
+}
+
+img:hover {
+  -ms-transform: scale(1.0); /* IE 9 */
+  -webkit-transform: scale(1.0); /* Safari 3-8 */
+  transform: scale(1.5); 
+  margin: auto;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  }
+
+.info
+{
+    text-align: center;
+    margin:10;
+    position: absolute;
+    top: 120px;
+    right: 830px;
+    left:auto;
+    text-align: justify;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 105%;
+    font-family: 'Times New Roman', Times, serif;
 }
 .info:hover
 {
-    font-size: 20px;
-    font-style: italic;
-    font-weight: bold;
+    font-weight: bolder;
+    text-align: justify;
+    font-size: 115%;
+    color: indianred;
+    background-color: lightblue;
+    width: fit-content;
+    height: fit-content;
+    transition-timing-function:linear;
+    
+    
+    
 }
 .about,.projects,.skills,.hobbies,.Achievements
 {
-    text-align: center;
+    text-align: left;
 }
 .about:hover,.projects:hover,.skills:hover,.hobbies:hover,.Achievements:hover
 {
@@ -48,15 +87,16 @@ border-radius: 50%;
 
     </head>
     <body style="background-color:#184A45FF;">
-        <div style="text-align: center;">    
+        <div style="text-align: left;">    
+        
             <div>
                 <h1>Portfolio of Nikhil Wadhwa</h1>
                 <div>
-                    <img src="nikhil.jpg" style="border: 1px solid black;" width="200" height="200"  >
+                    <img src="nikhil.jpg">
                 </div>
                 <div class="info">
                 <div>
-                    <span><b>Nikhil Wadhwa</b></span>
+                    <span style="font-size:larger;">Nikhil Wadhwa</span>
                 </div>
                 <div>
                     <span>Email:</span><a href="mailto:nikhilwadhwa071299@gmail.com">nikhilwadhwa071299@gmail.com</a>
@@ -67,7 +107,7 @@ border-radius: 50%;
                     <span>Contact No:- +91 8053954834</span>
                 </div>
                 <div>
-                    <span>HomeTown:- Palwal,Haryana</span>
+                    <span>HomeTown:- Palwal, Haryana</span>
                 </div>
                 </div>
                 
@@ -75,32 +115,54 @@ border-radius: 50%;
             
             <div class=skills>
                 <h1>Technical Skills</h1>
-                
-             <span>C, C++, PHP, JAVA, PYTHON, KOTLIN</span>
+             <ul>
+                 <li>C</li>
+                 <li>C++</li>
+                 <li>PHP</li>
+                 <li>JAVA</li>
+                 <li>PYTHON</li>
+                 <li>KOTLIN</li>
+                 <li>HTML,CSS,JAVASCRIPT,BOOTSTRAP</li>
+             </ul>
                 
                     
                 </div>
             </div>
             <div class="projects">
                 <h1>Projects</h1>
-              <span>Authentication App,Portfolio App,QR Code App,BMI App,TimeZone bot</span>
+              
+              <ul>
+                  <li>Quiz Game for Fun using HTML, CSS, JAVASCRIPT.</li>
+                  <li>Typing-Game using HTML,CSS, JAVASCRIPT.</li>
+                  <li>TimeZone chatbot using Rasa & Python.</li>
+                  <li>Castle-dungeons-an-Interactive-Fiction-Game-using-Python.</li>
+                  <li>Portfolio App using Flutter.</li>
+                  <li>BMI Android Application.</li>
+                  <li>Authentication Android Application with Firebase.</li>
+              </ul>
                 </div>
             </div>
             <div class="about">
-                <h1>About Me</h1>
-                <span>I am Pursuing B.Tech C.S.E From Manav Rachna International Institute of Research & Studies.</span>
+                <h1>About Me...</h1>
+                <span>I am Pursuing B.Tech C.S.E From Manav Rachna International Institute of Research & Studies. I always keen to learn new things & enhance my skills with my new ideas & tatics. </span>
             </div>
             <div class="hobbies">
                 <h1>Hobbies</h1>
-                <span>Playing Cricket, Listening Music.</span>
-            
+                <ul>
+                <li>Playing Cricket</li>
+                <li>Listening Music</li>  
+                </ul>         
             </div>
             <div class="Achievements">
              <h1>Achievements</h1>
-            <span>Got 3rd Position in Science Exhibition at District Level.</span>
+             <ul>
+            <li>Got 3rd Position in Science Exhibition at District Level.</li>
+            <li>Got 9.6 CGPA in 10th Class.</li>
+            <li>Got 88.8% in 12th Class.</li>
+            </ul>
 
             </div>
-
+        
         </div>
     </body>
 </html>
