@@ -83,6 +83,46 @@ img:hover {
     font-size: 20px;
     font-weight: bold;
 }
+.button
+{
+    margin-top: -10%;
+    margin-left: 230px;
+    border-radius: 12px;
+}
+.button {
+  position: relative;
+  background-color: #4CAF50;
+  border: none;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 10px;
+  width:fit-content;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
 </style>
 
     </head>
@@ -94,6 +134,7 @@ img:hover {
                 <div>
                     <img src="nikhil.jpg">
                 </div>
+                
                 <div class="info">
                 <div>
                     <span style="font-size:larger;">Nikhil Wadhwa</span>
@@ -109,7 +150,9 @@ img:hover {
                 <div>
                     <span>HomeTown:- Palwal, Haryana</span>
                 </div>
+                
                 </div>
+                <button class="button"><a href="portfolio.html">Visit My Bootstrap Portfolio</a></button>
                 
             </div>
             
