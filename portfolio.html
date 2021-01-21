@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Portfolio of Nikhil Wadhwa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {
+    font-size: 16px;
+  }
+
+  .margin {
+    margin-bottom: 45px;
+  }
+
+  .bg-1 { 
+    background-color: gray; 
+    color:#ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d; 
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; 
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; 
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+.open .dropdown-toggle {
+    color: #fff;
+    
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: lightgrey;
+  }
+.projects
+{
+text-align: justify;
+}
+
+
+
+  
+  
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>           
+      <a class="navbar-brand"  href="#">NW</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#1">WHO</a></li>
+        <li><a href="#2">ABOUT</a></li>
+        <li><a href="#3">SKILLS</a></li>
+        <li><a href="#4">CONTACT</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#6">Projects</a></li>
+            <li><a href="#5">Achievements</a></li>
+             
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div id="1" class="container-fluid bg-1 text-center">
+  <h3 class="margin">Who Am I?</h3>
+  <img src="nikhil.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Profile Picture of Nikhil Wadhwa" width="350" height="350">
+  <h3>I'm Nikhil Wadhwa</h3>
+</div>
+
+<!-- Second Container -->
+<div id="2" class="container-fluid bg-2 text-center">
+  <h3 class="margin">About Me...</h3>
+  <p>Hey, First of all Thank you very much to visit my Portfolio Webpage. I am Nikhil Wadhwa & Currently I am Pursuing B.Tech C.S.E Specialization in Cloud Computing From Manav Rachna International Institute of Research & Studies, Faridabad. </p>
+    </div>
+
+    <div id="3"class="container-fluid bg-4 text-center">
+      <h3 class="margin">Skills</h3>
+      <p>Programming Languages:- C, C++, PHP, PYTHON, KOTLIN, HTML, CSS, JAVASCRIPT </p>
+        </div>
+
+<!-- Third Container (Grid) -->
+<div id="4" class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Where To Find Me?</h3><br>
+  <div class="rows">
+    <div class="col-sm-3">
+      
+      <img src="download1.png" class="img-responsive margin" style="width:100%">
+
+      
+      
+    </div>
+    
+    <div class="col-sm-3"> 
+      
+      <img src="download2.jpg" class="img-responsive margin" style="width:100%">
+    </div>
+    <div class="col-sm-3"> 
+      
+      <img src="download3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      
+      <img src="download4.jpg" class="img-responsive margin" style="width: 100%" alt="Image" >
+    </div>
+  </div>
+</div>
+
+<div id ="5" class="container-fluid bg-2 text-center">    
+  <h3 class="margin">ACHIEVEMENTS</h3><br>
+  <div class="rows">
+<div class="col-sm-3"> 
+      
+  <img src="download5.png" class="img-responsive margin" style="width:100%">
+</div>
+<div class="col-sm-3"> 
+  
+  <img src="download6.png" class="img-responsive margin" style="width:100%" alt="Image">
+</div>
+<div class="col-sm-3"> 
+  
+  <img src="download7.png" class="img-responsive margin" style="width: 100%" alt="Image" >
+</div>
+<div class="col-sm-3"> 
+  
+  <img src="download8.png" class="img-responsive margin" style="width: 100%" alt="Image" >
+</div>
+</div>
+</div>
+
+
+<div id ="6" class="container-fluid bg-1 text-center">    
+  <h3 class="margin">MY PROJECTS</h3><br>
+  <div class="rows">
+<div class="col-sm-4">
+  <div class="projects">
+  <h1>Web Development</h1>
+  <ul>
+  <li>Quiz Game for Fun.</li>
+  <li>Typing-Master-Game.</li>
+  <li>Portfolio.</li>
+  <li>Pig Game.</li>
+  <li>Voice Calculator.</li>
+  <li>Smart India Website.</li>
+  <li>WordPress Website.</li>
+</ul>
+</div>
+</div>
+
+<div class="col-sm-4">
+  <div class="projects">
+  <h1>App Development</h1>
+  <ul>
+  <li>Authentication App.</li>
+  <li>QR Code App.</li>
+  <li>BMI APP.</li>
+  <li>Portfolio App.</li>
+  <li>Voice Calculator.</li>
+  <li>Smart India Website.</li>
+  
+  </ul>
+</div>
+</div>
+
+<div class="col-sm-4">
+  <div class="projects">
+  <h1>Python</h1>
+  <ul>
+  
+  <li>ChatBot using Rasa & Python.</li>
+  <li>Interactive Fiction Game.</li>
+  </ul>
+</div>
+</div>
+</div>
+</div>
+  
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <button onclick="topFunction()" id="myBtn" title="Go to top">	&#x2191;</button>
+  <p>This Portfolio is Made By Nikhil Wadhwa.</p> 
+
+</footer>
+
+<script>
+
+
+
+
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+  
+
+</body>
+</html>
